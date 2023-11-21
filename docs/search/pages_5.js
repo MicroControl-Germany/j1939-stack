@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['initialisation_20process_0',['Initialisation Process',['../j1939_example_start.html',1,'']]],
-  ['introduction_20to_20can_1',['Introduction to CAN',['../intro_can.html',1,'']]]
+  ['ecu_20demo_0',['ECU demo',['../j1939_example_ecu1.html',1,'']]],
+  ['examples_1',['J1939 Code Examples',['../j1939_examples.html',1,'']]]
 ];

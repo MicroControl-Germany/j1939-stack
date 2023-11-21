@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_25canpie_20fd_20configuration_20options_0',['%CANpie FD configuration options',['../group__CP__CONF.html',1,'']]]
+  ['2_20releases_0',['Version History for major 2 releases',['../j1939_version_2.html',1,'']]]
 ];

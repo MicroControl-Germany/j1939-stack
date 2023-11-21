@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hardware_20abstraction_20layer_0',['Hardware Abstraction Layer',['../j1939_api_hal.html',1,'']]]
+  ['getting_20started_0',['Getting started',['../j1939_getting_started.html',1,'']]]
 ];

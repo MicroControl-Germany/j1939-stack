@@ -5,14 +5,13 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EJGM9KKQR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-4EJGM9KKQR');
-</script></script>
+</script>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>J1939 Protocol Stack | Complete list of callbacks</title>
@@ -43,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectbrief">J1939 Documentation</div>
-   <div id="projectnumber">Version 4.12.00</div>
+   <div id="projectnumber">Version 4.14.00</div>
   </td>
  </tr>
  </tbody>
@@ -167,7 +166,7 @@ $(document).ready(function(){initNavTree('j1939_example_user.html',''); initResi
 <div class="line"><span class="comment">//--------------------------------------------------------------------------------------------------------------------//</span></div>
 <div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="j1939__mgr_8h.html#a4701a0e79e985680acb9e3d5fd84cc80">J1939_MgrEventRcvTimeout</a>(uint8_t ubNetV, uint32_t ulPgnV)</div>
 <div class="line">{</div>
-<div class="line">   <span class="comment">//-----------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line">   <span class="comment">// example for handling of PGN timeouts</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <span class="keywordflow">switch</span> (ulPgnV)</div>
@@ -210,13 +209,13 @@ $(document).ready(function(){initNavTree('j1939_example_user.html',''); initResi
 <div class="line">   uint8_t  ubCntT;</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">   <span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line">   <span class="comment">// ubSrcAddrV - ID of claiming node</span></div>
 <div class="line">   <span class="comment">// pubDataV   - pointer to 8 bytes of NAME</span></div>
-<div class="line">   <span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">   <span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line">   <span class="comment">// example: check for a specific ECU at address 0</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <span class="keywordflow">if</span>(ubSrcAddrV == 0)</div>
@@ -227,14 +226,28 @@ $(document).ready(function(){initNavTree('j1939_example_user.html',''); initResi
 <div class="line">         pubDataV++;</div>
 <div class="line">      }</div>
 <div class="line"> </div>
-<div class="line">      <span class="comment">//--------------------------------------------------------</span></div>
+<div class="line">      <span class="comment">//-------------------------------------------------------------------------------------------</span></div>
 <div class="line">      <span class="comment">// check the NAME value</span></div>
+<div class="line">      <span class="comment">//</span></div>
 <div class="line">      <span class="keywordflow">if</span> (aubNameT[0] == 0x43)</div>
 <div class="line">      {</div>
 <div class="line"> </div>
 <div class="line">      }</div>
 <div class="line">   }</div>
 <div class="line">}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//--------------------------------------------------------------------------------------------------------------------//</span></div>
+<div class="line"><span class="comment">// J1939_NmtGetApplicationName()                                                                                      //</span></div>
+<div class="line"><span class="comment">// overwrite NAME value by application                                                                                //</span></div>
+<div class="line"><span class="comment">//--------------------------------------------------------------------------------------------------------------------//</span></div>
+<div class="line"><a class="code hl_struct" href="structJ1939__Name__s.html">J1939_Name_ts</a> * <a class="code hl_function" href="j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535">J1939_NmtGetApplicationName</a>(uint8_t ubNetV)</div>
+<div class="line">{</div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">// returning a NULL pointer denotes to use the pre-defined values</span></div>
+<div class="line">   <span class="comment">//</span></div>
+<div class="line">   <span class="keywordflow">return</span> ((<a class="code hl_struct" href="structJ1939__Name__s.html">J1939_Name_ts</a> *) 0L);</div>
+<div class="line">}  </div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//--------------------------------------------------------------------------------------------------------------------//</span></div>
@@ -245,18 +258,18 @@ $(document).ready(function(){initNavTree('j1939_example_user.html',''); initResi
 <div class="line">{</div>
 <div class="line">   uint32_t  ulIdentityT;</div>
 <div class="line"> </div>
-<div class="line">   <span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line">   <span class="comment">// setup identity value, e.g. read from EEPROM</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   ulIdentityT = 0x00223456;</div>
 <div class="line"> </div>
-<div class="line">   <span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line">   <span class="comment">// make sure that only 21 bit are valid</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   ulIdentityT = ulIdentityT &amp; 0x001FFFFF;</div>
 <div class="line"> </div>
-<div class="line">   <span class="keywordflow">return</span>(ulIdentityT);</div>
-<div class="line">}</div>
+<div class="line">   <span class="keywordflow">return</span> (ulIdentityT);</div>
+<div class="line">}  </div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//--------------------------------------------------------------------------------------------------------------------//</span></div>
@@ -265,12 +278,11 @@ $(document).ready(function(){initNavTree('j1939_example_user.html',''); initResi
 <div class="line"><span class="comment">//--------------------------------------------------------------------------------------------------------------------//</span></div>
 <div class="line">uint8_t <a class="code hl_function" href="j1939__nmt_8h.html#ae3bc75409954c1fbe1c54539abb5786f">J1939_NmtGetNewAddress</a>(uint8_t ubNetV, uint8_t ubCurrentAddressV)</div>
 <div class="line">{</div>
-<div class="line">   <span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line">   <span class="comment">// this demo adds the value 2 to the current address</span></div>
 <div class="line">   <span class="comment">//</span></div>
-<div class="line">   <span class="keywordflow">return</span>(ubCurrentAddressV + 2);</div>
+<div class="line">   <span class="keywordflow">return</span> (ubCurrentAddressV + 2);</div>
 <div class="line">}</div>
-<div class="line"> </div>
 <div class="ttc" id="aj1939__mgr_8h_html"><div class="ttname"><a href="j1939__mgr_8h.html">j1939_mgr.h</a></div><div class="ttdoc">J1939 Management Functions .</div></div>
 <div class="ttc" id="aj1939__mgr_8h_html_a4701a0e79e985680acb9e3d5fd84cc80"><div class="ttname"><a href="j1939__mgr_8h.html#a4701a0e79e985680acb9e3d5fd84cc80">J1939_MgrEventRcvTimeout</a></div><div class="ttdeci">void J1939_MgrEventRcvTimeout(uint8_t ubNetV, uint32_t ulPgnV)</div></div>
 <div class="ttc" id="aj1939__mgr_8h_html_a6c55b5340254d2df023c4f3202998ac8"><div class="ttname"><a href="j1939__mgr_8h.html#a6c55b5340254d2df023c4f3202998ac8">J1939_MgrOnBusOff</a></div><div class="ttdeci">void J1939_MgrOnBusOff(uint8_t ubNetV)</div></div>
@@ -278,7 +290,9 @@ $(document).ready(function(){initNavTree('j1939_example_user.html',''); initResi
 <div class="ttc" id="aj1939__nmt_8h_html"><div class="ttname"><a href="j1939__nmt_8h.html">j1939_nmt.h</a></div><div class="ttdoc">J1939 Network management .</div></div>
 <div class="ttc" id="aj1939__nmt_8h_html_a5cc4e56606b50c22bf2d42a9f280bebc"><div class="ttname"><a href="j1939__nmt_8h.html#a5cc4e56606b50c22bf2d42a9f280bebc">J1939_NmtGetIdentityNumber</a></div><div class="ttdeci">uint32_t J1939_NmtGetIdentityNumber(uint8_t ubNetV)</div></div>
 <div class="ttc" id="aj1939__nmt_8h_html_a8304576f6f60e2618b1299174045c2e9"><div class="ttname"><a href="j1939__nmt_8h.html#a8304576f6f60e2618b1299174045c2e9">J1939_NmtEventClaimAddess</a></div><div class="ttdeci">void J1939_NmtEventClaimAddess(uint8_t ubNetV, uint8_t ubSrcAddrV, uint8_t *pubDataV)</div></div>
+<div class="ttc" id="aj1939__nmt_8h_html_abf6acdf2d597091595cb3c795f819535"><div class="ttname"><a href="j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535">J1939_NmtGetApplicationName</a></div><div class="ttdeci">J1939_Name_ts * J1939_NmtGetApplicationName(uint8_t ubNetV)</div></div>
 <div class="ttc" id="aj1939__nmt_8h_html_ae3bc75409954c1fbe1c54539abb5786f"><div class="ttname"><a href="j1939__nmt_8h.html#ae3bc75409954c1fbe1c54539abb5786f">J1939_NmtGetNewAddress</a></div><div class="ttdeci">uint8_t J1939_NmtGetNewAddress(uint8_t ubNetV, uint8_t ubCurrentAddressV)</div></div>
+<div class="ttc" id="astructJ1939__Name__s_html"><div class="ttname"><a href="structJ1939__Name__s.html">J1939_Name_s</a></div><div class="ttdoc">Access to ECU NAME.</div><div class="ttdef"><b>Definition</b> j1939_nmt.h:69</div></div>
 </div><!-- fragment --><p><br  />
  <br  />
  <br  />
@@ -290,7 +304,7 @@ $(document).ready(function(){initNavTree('j1939_example_user.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Tue Nov 21 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Mar 22 2024 </li>
   </ul>
 </div>
 </body>

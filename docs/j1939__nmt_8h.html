@@ -5,14 +5,13 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EJGM9KKQR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-4EJGM9KKQR');
-</script></script>
+</script>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>J1939 Protocol Stack | j1939_nmt.h File Reference</title>
@@ -43,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectbrief">J1939 Documentation</div>
-   <div id="projectnumber">Version 4.12.00</div>
+   <div id="projectnumber">Version 4.14.00</div>
   </td>
  </tr>
  </tbody>
@@ -172,6 +171,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a8304576f6f60e2618b1299174045c2e9" id="r_a8304576f6f60e2618b1299174045c2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="j1939__nmt_8h.html#a8304576f6f60e2618b1299174045c2e9">J1939_NmtEventClaimAddess</a> (uint8_t ubNetV, uint8_t ubSrcAddrV, uint8_t *pubDataV)</td></tr>
 <tr class="separator:a8304576f6f60e2618b1299174045c2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6acdf2d597091595cb3c795f819535" id="r_abf6acdf2d597091595cb3c795f819535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJ1939__Name__s.html">J1939_Name_ts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535">J1939_NmtGetApplicationName</a> (uint8_t ubNetV)</td></tr>
+<tr class="separator:abf6acdf2d597091595cb3c795f819535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc4e56606b50c22bf2d42a9f280bebc" id="r_a5cc4e56606b50c22bf2d42a9f280bebc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="j1939__nmt_8h.html#a5cc4e56606b50c22bf2d42a9f280bebc">J1939_NmtGetIdentityNumber</a> (uint8_t ubNetV)</td></tr>
 <tr class="separator:a5cc4e56606b50c22bf2d42a9f280bebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3bc75409954c1fbe1c54539abb5786f" id="r_ae3bc75409954c1fbe1c54539abb5786f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="j1939__nmt_8h.html#ae3bc75409954c1fbe1c54539abb5786f">J1939_NmtGetNewAddress</a> (uint8_t ubNetV, uint8_t ubCurrentAddressV)</td></tr>
@@ -248,6 +249,41 @@ Functions</h2></td></tr>
 </dl>
 <p>This function is called be the J1939 stack upon reception of an address claiming message that has a different source address. </p>
 
+</div>
+</div>
+<a id="abf6acdf2d597091595cb3c795f819535" name="abf6acdf2d597091595cb3c795f819535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6acdf2d597091595cb3c795f819535">&#9670;&#160;</a></span>J1939_NmtGetApplicationName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJ1939__Name__s.html">J1939_Name_ts</a> * J1939_NmtGetApplicationName </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ubNetV</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubNetV</td><td>- J1939 Network channel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to J1939_Name_ts structure</dd></dl>
+<p>The function is called by the protocol upon initialization in order to allow modification of the NAME field. It can be used to overwrite the pre-defined values defined inside the <code><a class="el" href="j1939__conf_8h.html" title="J1939 configuration .">j1939_conf.h</a></code> file. In case a NULL pointer is returned the pre-defined values are used.</p>
+<p>A sample implementation of he function is located inside the <code>j1939_user.c</code> file.  </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structJ1939__Name__s.html">J1939_Name_ts</a> * <a class="code hl_function" href="j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535">J1939_NmtGetApplicationName</a>(uint8_t ubNetV)</div>
+<div class="line">{</div>
+<div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
+<div class="line">   <span class="comment">// returning a NULL pointer denotes to use the pre-defined values</span></div>
+<div class="line">   <span class="comment">//</span></div>
+<div class="line">   <span class="keywordflow">return</span> ((<a class="code hl_struct" href="structJ1939__Name__s.html">J1939_Name_ts</a> *) 0L);</div>
+<div class="line">}  </div>
+<div class="ttc" id="aj1939__nmt_8h_html_abf6acdf2d597091595cb3c795f819535"><div class="ttname"><a href="j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535">J1939_NmtGetApplicationName</a></div><div class="ttdeci">J1939_Name_ts * J1939_NmtGetApplicationName(uint8_t ubNetV)</div></div>
+<div class="ttc" id="astructJ1939__Name__s_html"><div class="ttname"><a href="structJ1939__Name__s.html">J1939_Name_s</a></div><div class="ttdoc">Access to ECU NAME.</div><div class="ttdef"><b>Definition</b> j1939_nmt.h:69</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5cc4e56606b50c22bf2d42a9f280bebc" name="a5cc4e56606b50c22bf2d42a9f280bebc"></a>
@@ -338,6 +374,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>This function is deprecated, use <a class="el" href="j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535">J1939_NmtGetApplicationName()</a> instead</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ubNetV</td><td>- J1939 Network channel </td></tr>
@@ -356,7 +393,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_64b004da7126e8b9eee2a2629ae82e74.html">stack-j1939</a></li><li class="navelem"><a class="el" href="j1939__nmt_8h.html">j1939_nmt.h</a></li>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Tue Nov 21 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Mar 22 2024 </li>
   </ul>
 </div>
 </body>

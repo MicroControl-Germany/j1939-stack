@@ -1,13 +1,11 @@
 <map id="j1939_defs.h" name="j1939_defs.h">
-<area shape="rect" id="Node000001" title="J1939 definitions ." alt="" coords="298,5,393,31"/>
+<area shape="rect" id="Node000001" title="J1939 definitions ." alt="" coords="255,5,351,31"/>
 <area shape="rect" id="Node000002" href="$cp__core_8h.html" title="CANpie core functions ." alt="" coords="183,79,261,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,34,257,73,254,69,323,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,34,248,71,245,67,287,30"/>
 <area shape="rect" id="Node000010" href="$cp__msg_8h.html" title="CANpie message access" alt="" coords="271,153,349,178"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="345,32,331,80,318,138,312,137,326,78,339,31"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="306,31,311,137,306,137,301,31"/>
 <area shape="rect" id="Node000011" href="$j1939__conf_8h.html" title="J1939 configuration ." alt="" coords="341,79,436,105"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="355,30,376,64,371,67,350,33"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="460,79,520,105"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="371,29,453,69,450,74,369,34"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="319,29,364,67,361,71,316,34"/>
 <area shape="rect" id="Node000003" href="$cp__fifo_8h.html" title="CANpie FIFO functions ." alt="" coords="175,153,247,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,105,218,138,212,137,217,104"/>
 <area shape="rect" id="Node000004" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="225,226,296,252"/>

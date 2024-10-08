@@ -1,15 +1,13 @@
 <map id="j1939_nmt.h" name="j1939_nmt.h">
-<area shape="rect" id="Node000001" title="J1939 Network management ." alt="" coords="300,5,392,31"/>
-<area shape="rect" id="Node000002" href="$j1939__defs_8h.html" title="J1939 definitions ." alt="" coords="298,79,393,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,31,348,63,343,63,343,31"/>
+<area shape="rect" id="Node000001" title="J1939 Network management ." alt="" coords="257,5,349,31"/>
+<area shape="rect" id="Node000002" href="$j1939__defs_8h.html" title="J1939 definitions ." alt="" coords="255,79,351,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,31,306,63,300,63,300,31"/>
 <area shape="rect" id="Node000003" href="$cp__core_8h.html" title="CANpie core functions ." alt="" coords="183,153,261,178"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,108,257,147,254,142,323,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="291,107,248,144,245,140,287,103"/>
 <area shape="rect" id="Node000011" href="$cp__msg_8h.html" title="CANpie message access" alt="" coords="271,226,349,252"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="345,106,331,153,318,212,312,211,326,152,339,104"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="306,105,311,211,306,211,301,105"/>
 <area shape="rect" id="Node000012" href="$j1939__conf_8h.html" title="J1939 configuration ." alt="" coords="341,153,436,178"/>
-<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="355,104,376,138,371,141,350,106"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="460,153,520,178"/>
-<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="371,103,453,143,450,148,369,108"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="319,103,364,141,361,145,316,107"/>
 <area shape="rect" id="Node000004" href="$cp__fifo_8h.html" title="CANpie FIFO functions ." alt="" coords="175,226,247,252"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,179,218,211,212,211,217,178"/>
 <area shape="rect" id="Node000005" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="225,300,296,326"/>

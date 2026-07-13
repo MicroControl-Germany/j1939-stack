@@ -142,5 +142,6 @@ var searchData=
   ['etmr_5fhres_5ftick_5f50ns_139',['eTMR_HRES_TICK_50ns',['../mc__tmr_8h.html#abea79c96d33978835009f1d29f01a6d1a8fadc4297c86cac80fdf2be2708e881a',1,'mc_tmr.h']]],
   ['etmr_5fhres_5ftick_5f50us_140',['eTMR_HRES_TICK_50us',['../mc__tmr_8h.html#abea79c96d33978835009f1d29f01a6d1ad46781220855e0911fe000878f4de3e7',1,'mc_tmr.h']]],
   ['etmr_5fhres_5ftick_5f5us_141',['eTMR_HRES_TICK_5us',['../mc__tmr_8h.html#abea79c96d33978835009f1d29f01a6d1a35cb9b9289a04826b71732536e6bc87d',1,'mc_tmr.h']]],
-  ['examples_142',['J1939 Code Examples',['../j1939_examples.html',1,'']]]
+  ['examples_142',['J1939 Code Examples',['../j1939_examples.html',1,'']]],
+  ['exceptions_143',['MISRA C:2025 Exceptions',['../misra_exceptions.html',1,'']]]
 ];

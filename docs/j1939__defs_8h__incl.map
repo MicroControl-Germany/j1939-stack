@@ -1,22 +1,22 @@
 <map id="j1939_defs.h" name="j1939_defs.h">
 <area shape="rect" id="Node000001" title="J1939 definitions ." alt="" coords="255,5,351,31"/>
-<area shape="rect" id="Node000002" href="$cp__core_8h.html" title="CANpie core functions ." alt="" coords="183,79,261,105"/>
+<area shape="rect" id="Node000002" href="$cp__core_8h.html" title="CANpie core functions" alt="" coords="182,79,261,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,34,248,71,245,67,287,30"/>
-<area shape="rect" id="Node000010" href="$cp__msg_8h.html" title="CANpie message access" alt="" coords="271,153,349,178"/>
+<area shape="rect" id="Node000010" href="$cp__msg_8h.html" title="CANpie message access" alt="" coords="270,153,349,178"/>
 <area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="306,31,311,137,306,137,301,31"/>
 <area shape="rect" id="Node000011" href="$j1939__conf_8h.html" title="J1939 configuration ." alt="" coords="341,79,436,105"/>
 <area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="319,29,364,67,361,71,316,34"/>
 <area shape="rect" id="Node000003" href="$cp__fifo_8h.html" title="CANpie FIFO functions ." alt="" coords="175,153,247,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,105,218,138,212,137,217,104"/>
-<area shape="rect" id="Node000004" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="225,226,296,252"/>
+<area shape="rect" id="Node000004" href="$canpie_8h.html" title=" " alt="" coords="225,226,296,252"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,177,246,212,241,215,217,180"/>
 <area shape="rect" id="Node000005" href="$mc__compiler_8h.html" title="Definition of compiler independent data types ." alt="" coords="145,300,250,326"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="252,254,220,290,216,286,248,250"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="274,300,375,326"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="274,300,374,326"/>
 <area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="273,250,306,287,302,290,269,254"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="5,374,137,399"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="177,329,107,368,104,363,175,324"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="161,374,235,399"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="160,374,235,399"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="200,326,200,358,195,358,195,326"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="259,374,323,399"/>
 <area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="215,324,265,362,262,366,212,328"/>

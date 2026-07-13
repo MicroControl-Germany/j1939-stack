@@ -21,7 +21,7 @@ var searchData=
   ['j1939_5fmsgpagefromid_18',['J1939_MsgPageFromId',['../j1939__msg_8h.html#a1bd40597a852686359773c2cb274466d',1,'j1939_msg.h']]],
   ['j1939_5fmsgpgnfromid_19',['J1939_MsgPgnFromId',['../j1939__msg_8h.html#a85c07068b0d0e0470e77a14e2209c55e',1,'j1939_msg.h']]],
   ['j1939_5fmsgpriorityfromid_20',['J1939_MsgPriorityFromId',['../j1939__msg_8h.html#ab6b3b50326b07f8f9983986472743b06',1,'j1939_msg.h']]],
-  ['j1939_5fnmteventclaimaddess_21',['J1939_NmtEventClaimAddess',['../j1939__nmt_8h.html#a8304576f6f60e2618b1299174045c2e9',1,'j1939_nmt.h']]],
+  ['j1939_5fnmteventclaimaddress_21',['J1939_NmtEventClaimAddress',['../j1939__nmt_8h.html#a54c38b3fb920e4c94cdb5f0cd57c5d49',1,'j1939_nmt.h']]],
   ['j1939_5fnmtgetapplicationname_22',['J1939_NmtGetApplicationName',['../j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535',1,'j1939_nmt.h']]],
   ['j1939_5fnmtgetidentitynumber_23',['J1939_NmtGetIdentityNumber',['../j1939__nmt_8h.html#a5cc4e56606b50c22bf2d42a9f280bebc',1,'j1939_nmt.h']]],
   ['j1939_5fnmtgetnewaddress_24',['J1939_NmtGetNewAddress',['../j1939__nmt_8h.html#ae3bc75409954c1fbe1c54539abb5786f',1,'j1939_nmt.h']]],

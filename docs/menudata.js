@@ -28,7 +28,7 @@ var menudata={children:[
 {text:"First steps",url:"j1939_getting_started.html"},
 {text:"Protocol Stack Overview",url:"j1939_api_overview.html"},
 {text:"Code Examples",url:"j1939_examples.html",children:[
-{text:"Initialisation",url:"j1939_example_start.html"},
+{text:"Initialization",url:"j1939_example_start.html"},
 {text:"PGN handling",url:"j1939_example_pgn.html"},
 {text:"ECU demo",url:"j1939_example_ecu1.html"},
 {text:"Joystick demo",url:"j1939_example_joystick.html"}]},
@@ -59,8 +59,12 @@ var menudata={children:[
 {text:"Watchdog",url:"mc__wdt_8h.html#MC_WDT"},
 {text:"Compiler definitions",url:"mc__compiler_8h.html#MC_COMPILER_H"}]},
 {text:"Version history",url:"j1939_version.html"}]},
-{text:"Overviews",url:"",children:[
-{text:"Introduction to CAN",url:"intro_can.html"},
-{text:"References",url:"stack_references.html"},
+{text:"Resources",url:"",children:[
+{text:"CAN abbreviations",url:"can_abbreviations.html"},
+{text:"CAN introduction",url:"can_introduction.html"},
+{text:"Specifications",url:"j1939_specifications.html"},
 {text:"Support",url:"stack_support.html"},
-{text:"License",url:"page_8license.html"}]}]}
+{text:"License",url:"stack_license.html"}]},
+{text:"Compliance",url:"",children:[
+{text:"MISRA C:2025",url:"cos_misra2025.html",children:[
+{text:"Exceptions",url:"misra_exceptions.html"}]}]}]}

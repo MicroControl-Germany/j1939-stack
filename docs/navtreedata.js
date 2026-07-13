@@ -29,7 +29,7 @@ var NAVTREE =
       [ "First steps", "j1939_getting_started.html", null ],
       [ "Protocol Stack Overview", "j1939_api_overview.html", null ],
       [ "Code Examples", "j1939_examples.html", [
-        [ "Initialisation", "j1939_example_start.html", null ],
+        [ "Initialization", "j1939_example_start.html", null ],
         [ "PGN handling", "j1939_example_pgn.html", null ],
         [ "ECU demo", "j1939_example_ecu1.html", null ],
         [ "Joystick demo", "j1939_example_joystick.html", null ]
@@ -67,19 +67,26 @@ var NAVTREE =
       ] ],
       [ "Version history", "j1939_version.html", null ]
     ] ],
-    [ "Overviews", null, [
-      [ "Introduction to CAN", "intro_can.html", null ],
-      [ "References", "stack_references.html", null ],
+    [ "Resources", null, [
+      [ "CAN abbreviations", "can_abbreviations.html", null ],
+      [ "CAN introduction", "can_introduction.html", null ],
+      [ "Specifications", "j1939_specifications.html", null ],
       [ "Support", "stack_support.html", null ],
-      [ "License", "page_8license.html", null ]
+      [ "License", "stack_license.html", null ]
+    ] ],
+    [ "Compliance", null, [
+      [ "MISRA C:2025", "cos_misra2025.html", [
+        [ "Exceptions", "misra_exceptions.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"canpie_8h.html#CANPIE_H"
+"can_abbreviations.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

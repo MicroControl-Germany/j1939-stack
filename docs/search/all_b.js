@@ -69,7 +69,7 @@ var searchData=
   ['j1939_5fnet_5fe_66',['J1939_Net_e',['../j1939__defs_8h.html#a1b1026373adf134c632ab776697a8569',1,'j1939_defs.h']]],
   ['j1939_5fnet_5fmax_67',['J1939_NET_MAX',['../j1939__conf_8h.html#a58839c2db8f5f6c646d4e9e2c691115b',1,'j1939_conf.h']]],
   ['j1939_5fnmt_2eh_68',['j1939_nmt.h',['../j1939__nmt_8h.html',1,'']]],
-  ['j1939_5fnmteventclaimaddess_69',['J1939_NmtEventClaimAddess',['../j1939__nmt_8h.html#a8304576f6f60e2618b1299174045c2e9',1,'j1939_nmt.h']]],
+  ['j1939_5fnmteventclaimaddress_69',['J1939_NmtEventClaimAddress',['../j1939__nmt_8h.html#a54c38b3fb920e4c94cdb5f0cd57c5d49',1,'j1939_nmt.h']]],
   ['j1939_5fnmtgetapplicationname_70',['J1939_NmtGetApplicationName',['../j1939__nmt_8h.html#abf6acdf2d597091595cb3c795f819535',1,'j1939_nmt.h']]],
   ['j1939_5fnmtgetidentitynumber_71',['J1939_NmtGetIdentityNumber',['../j1939__nmt_8h.html#a5cc4e56606b50c22bf2d42a9f280bebc',1,'j1939_nmt.h']]],
   ['j1939_5fnmtgetnewaddress_72',['J1939_NmtGetNewAddress',['../j1939__nmt_8h.html#ae3bc75409954c1fbe1c54539abb5786f',1,'j1939_nmt.h']]],

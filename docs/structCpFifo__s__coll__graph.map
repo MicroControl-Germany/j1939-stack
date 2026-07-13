@@ -1,5 +1,5 @@
 <map id="CpFifo_s" name="CpFifo_s">
-<area shape="rect" id="Node000001" title="Administration variables of a CAN message FIFO." alt="" coords="7,274,97,379"/>
-<area shape="rect" id="Node000002" href="$structCpCanMsg__s.html" title="CAN message structure." alt="" coords="5,5,99,211"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,210,55,257,49,257,49,210"/>
+<area shape="rect" id="Node000001" title="Administration variables of a CAN frame FIFO." alt="" coords="5,285,96,392"/>
+<area shape="rect" id="Node000002" href="$structCpCanMsg__s.html" title="CAN frame structure." alt="" coords="6,5,96,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,213,54,268,48,268,48,213"/>
 </map>

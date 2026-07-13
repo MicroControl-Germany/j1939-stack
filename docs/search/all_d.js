@@ -2,8 +2,8 @@ var searchData=
 [
   ['major_202_20releases_0',['Version History for major 2 releases',['../j1939_version_2.html',1,'']]],
   ['major_203_20releases_1',['Version History for major 3 releases',['../j1939_version_3.html',1,'']]],
-  ['mask_20for_20message_20control_2',['Bit mask for message control',['../group__CP__MSG__CTRL.html',1,'']]],
-  ['mask_20values_20for_20can_20messages_3',['Mask values for CAN messages',['../group__CP__MASK.html',1,'']]],
+  ['mask_20for_20frame_20control_2',['Bit mask for frame control',['../group__CP__MSG__CTRL.html',1,'']]],
+  ['mask_20values_20for_20can_20frames_3',['Mask values for CAN frames',['../group__CP__MASK.html',1,'']]],
   ['mc_5fcompiler_2eh_4',['mc_compiler.h',['../mc__compiler_8h.html',1,'']]],
   ['mc_5fcpu_2eh_5',['mc_cpu.h',['../mc__cpu_8h.html',1,'']]],
   ['mc_5ftmr_2eh_6',['mc_tmr.h',['../mc__tmr_8h.html',1,'']]],
@@ -39,6 +39,6 @@ var searchData=
   ['mctmrtimetoticks_36',['McTmrTimeToTicks',['../mc__tmr_8h.html#ab9baec2c1debb49f9f6f5f46a10e256c',1,'mc_tmr.h']]],
   ['mcwdtinit_37',['McWdtInit',['../mc__wdt_8h.html#abebf747aacbe972a467bc86a5986e534',1,'mc_wdt.h']]],
   ['mcwdttrigger_38',['McWdtTrigger',['../mc__wdt_8h.html#a905c68fe37b075b3934733a06fd02c6d',1,'mc_wdt.h']]],
-  ['message_20control_39',['Bit mask for message control',['../group__CP__MSG__CTRL.html',1,'']]],
-  ['messages_40',['Mask values for CAN messages',['../group__CP__MASK.html',1,'']]]
+  ['misra_20c_3a2025_20compliance_20summary_20tables_39',['MISRA C:2025 Compliance Summary Tables',['../cos_misra2025.html',1,'']]],
+  ['misra_20c_3a2025_20exceptions_40',['MISRA C:2025 Exceptions',['../misra_exceptions.html',1,'']]]
 ];
